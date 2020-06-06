@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package chatpot;
+
+service ChatpotAuth {
+  rpc getUser(GetUserRequest) returns (User) {}
+}
+
+message GetUserRequest {
+  int32 userId = 1;
+}
+
+message Nick {
+  string en = 1;
+  string ko = 2;
+  string ja = 3;
+}
