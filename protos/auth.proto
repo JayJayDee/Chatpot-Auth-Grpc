@@ -2,16 +2,15 @@ syntax = "proto3";
 
 package chatpot;
 
-service ChatpotAuth {
-  rpc getUser(GetUserRequest) returns (User) {}
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  rpc SayHi (HelloRequest) returns (HelloReply) {}
 }
 
-message GetUserRequest {
-  int32 userId = 1;
+message HelloRequest {
+  string name = 1;
 }
 
-message Nick {
-  string en = 1;
-  string ko = 2;
-  string ja = 3;
+message HelloReply {
+  string message = 1;
 }
