@@ -22,7 +22,7 @@
   "homepage": "https://github.com/JayJayDee/Chatpot-Auth-Grpc#readme",
   "dependencies": {
     "@grpc/proto-loader": "^0.5.4",
-    "grpc": "^1.24.3",
+    "grpc": "^1.24.9",
     "mali": "^0.20.0",
     "typeorm": "^0.2.25"
   },
